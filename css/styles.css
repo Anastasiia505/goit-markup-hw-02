@@ -11,6 +11,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--basic-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-size: 16px;
 }
 .link {
   text-decoration: none;
@@ -22,14 +25,13 @@ body {
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: inherit;
+  line-height: inherit;
   letter-spacing: 0.04em;
 }
 .first-title {
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
@@ -37,13 +39,9 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 
 .description {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--text-color);
 }
 
@@ -85,9 +83,6 @@ body {
 .header-link {
   color: var(--basic-color);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 .header-link.current {
   color: var(--pressed-state-color);
@@ -95,8 +90,6 @@ body {
 /* adress */
 .adress-link {
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
   color: var(--text-color);
 }
 
@@ -107,16 +100,17 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
 .hero-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   background-color: var(--primary-brand-color);
   color: var(--secondary-color);
+  border: 1px solid var(--primary-brand-color);
+}
+
+/*Team */
+.team {
+  background-color: var(--accent-light-color);
 }
 
 /* Footer  */
@@ -138,8 +132,12 @@ body {
 .portfolio-btn:focus {
   background-color: var(--pressed-state-color);
   color: var(--secondary-color);
+  border: 1px solid var(--pressed-state-color);
+  border-radius: 4px;
 }
 .portfolio-btn {
   color: var(--primary-brand-color);
   background-color: var(--accent-light-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
